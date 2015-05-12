@@ -19,6 +19,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //Adiciona o background como imagem repetida (pattern background)
+        self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"backgroundapp"]];
     
     _labelDescription.text = _caseDescription;
     

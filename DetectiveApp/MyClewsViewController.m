@@ -26,6 +26,8 @@
     [super viewDidLoad];
     _myClews = [[MyClewsStore sharedStore] getAll];
     
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"backgroundapp"]];
+    
     //codigo NSFectechedResultsControllerDelegate
     [[MyClewsStore sharedStore] fetchedResultsController].delegate = self;
 }
@@ -95,10 +97,19 @@
 
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    NSString *identifier;
     
-    NSString *identifier = @"CustomCollection";
+    if (indexPath == 0) {
+        // Para tentar retornar a primeira célula do negócio (a de adicionar pista
+       identifier = @"AddCell";
+        return [collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
+
+    } else {
+        identifier = @"CustomCollection";
+    }
     
     CustomCollectionViewCell *cell = (CustomCollectionViewCell*)[collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
+    
     
     NSLog(@"%ld",indexPath.row);
     //MyClews *clew = (MyClews*) [_myClews objectAtIndex:indexPath.row];
