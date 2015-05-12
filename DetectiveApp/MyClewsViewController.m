@@ -11,9 +11,10 @@
 #import "MyClewsStore.h"
 #import "MyClews.h"
 
-@interface MyClewsViewController ()<UICollectionViewDataSource,UICollectionViewDelegate>
+@interface MyClewsViewController ()<UICollectionViewDataSource,UICollectionViewDelegate, NSFetchedResultsControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (nonatomic, readonly) NSFetchedResultsController *fetchedResultsController;
 
 @property (nonatomic) NSArray *myClews;
 
@@ -24,17 +25,74 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _myClews = [[MyClewsStore sharedStore] getAll];
+    
+    //codigo NSFectechedResultsControllerDelegate
+    [[MyClewsStore sharedStore] fetchedResultsController].delegate = self;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+/*
+ ---------------------------------
+            FETCHEDRESULT
+ ---------------------------------
+ */
+- (NSFetchedResultsController *)fetchedResultsController {
+    return [[MyClewsStore sharedStore] fetchedResultsController];
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        MyClews *clew = [[self fetchedResultsController] objectAtIndexPath:indexPath];
+        MyClewsStore *store = [MyClewsStore sharedStore];
+        [store removeUnidadeFederativa:clew];
+        [store saveChanges];
+    }
+}
+
+
+- (void)controller:(NSFetchedResultsController *)controller didChangeObject:(id)anObject atIndexPath:(NSIndexPath *)indexPath forChangeType:(NSFetchedResultsChangeType)type newIndexPath:(NSIndexPath *)newIndexPath {
+    [self.fetchedResultsController performFetch:nil];
+    [self.collectionView reloadData];
+    
+    //    [self.tableView beginUpdates];
+    //
+    //    switch (type) {
+    //        case NSFetchedResultsChangeInsert:
+    //            [self.tableView reloadRowsAtIndexPaths:@[newIndexPath] withRowAnimation:UITableViewRowAnimationTop];
+    //            break;
+    //
+    //        case NSFetchedResultsChangeDelete:
+    //            [self.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationBottom];
+    //            break;
+    //
+    //        case NSFetchedResultsChangeUpdate:
+    //            [self.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
+    //            break;
+    //
+    //        case NSFetchedResultsChangeMove:
+    //            [self.tableView reloadRowsAtIndexPaths:@[newIndexPath] withRowAnimation:UITableViewRowAnimationTop];
+    //            [self.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationBottom];
+    //            break;
+    //    }
+    //
+    //    [self.tableView endUpdates];
+}
+
+/*
+ ---------------------------------
+            TABLEVIEW
+ ---------------------------------
+ */
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    NSLog(@"COUNT: %ld",[_myClews count]);
-    return [_myClews count];
+    
+    return [[self.fetchedResultsController sections][section] numberOfObjects];
 }
+
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
@@ -43,7 +101,8 @@
     CustomCollectionViewCell *cell = (CustomCollectionViewCell*)[collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
     
     NSLog(@"%ld",indexPath.row);
-    MyClews *clew = (MyClews*) [_myClews objectAtIndex:indexPath.row];
+    //MyClews *clew = (MyClews*) [_myClews objectAtIndex:indexPath.row];
+    MyClews *clew = [self.fetchedResultsController objectAtIndexPath:indexPath];
     cell.labelName.text = clew.clewDescription;
     
     
