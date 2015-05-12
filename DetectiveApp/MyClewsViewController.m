@@ -1,27 +1,29 @@
 //
-//  FirstViewController.m
+//  MyClewsViewController.m
 //  DetectiveApp
 //
 //  Created by Guilherme Kenji Kodama on 11/05/15.
 //  Copyright (c) 2015 Guilherme Kenji Kodama. All rights reserved.
 //
 
-#import "FirstViewController.h"
+#import "MyClewsViewController.h"
 
-@interface FirstViewController ()
+@interface MyClewsViewController ()
 
 @end
 
-@implementation FirstViewController
+@implementation MyClewsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
 
 @end

@@ -9,12 +9,20 @@
 /* Begin PBXBuildFile section */
 		793AB0AA1B00C221008D2ED3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 793AB0A91B00C221008D2ED3 /* main.m */; };
 		793AB0AD1B00C221008D2ED3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 793AB0AC1B00C221008D2ED3 /* AppDelegate.m */; };
-		793AB0B01B00C221008D2ED3 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 793AB0AF1B00C221008D2ED3 /* FirstViewController.m */; };
-		793AB0B31B00C221008D2ED3 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 793AB0B21B00C221008D2ED3 /* SecondViewController.m */; };
+		793AB0B01B00C221008D2ED3 /* MapNextClewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 793AB0AF1B00C221008D2ED3 /* MapNextClewViewController.m */; };
+		793AB0B31B00C221008D2ED3 /* ScannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 793AB0B21B00C221008D2ED3 /* ScannerViewController.m */; };
 		793AB0B61B00C221008D2ED3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 793AB0B41B00C221008D2ED3 /* Main.storyboard */; };
 		793AB0B81B00C221008D2ED3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 793AB0B71B00C221008D2ED3 /* Images.xcassets */; };
 		793AB0BB1B00C221008D2ED3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 793AB0B91B00C221008D2ED3 /* LaunchScreen.xib */; };
 		793AB0C71B00C221008D2ED3 /* DetectiveAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 793AB0C61B00C221008D2ED3 /* DetectiveAppTests.m */; };
+		793AB0D21B00C40E008D2ED3 /* MyClewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 793AB0D11B00C40E008D2ED3 /* MyClewsViewController.m */; };
+		793AB0D51B00C599008D2ED3 /* ClewDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 793AB0D41B00C599008D2ED3 /* ClewDetailViewController.m */; };
+		79B1062F1B00DB450087E9F7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79B1062E1B00DB450087E9F7 /* MapKit.framework */; };
+		79B106321B00DFA10087E9F7 /* MapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B106311B00DFA10087E9F7 /* MapAnnotation.m */; };
+		79B106351B012E670087E9F7 /* DetectiveApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 79B106331B012E670087E9F7 /* DetectiveApp.xcdatamodeld */; };
+		79C28BF21B014AB500E59E42 /* CaseDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C28BF11B014AB500E59E42 /* CaseDetailViewController.m */; };
+		79C28C041B0253F400E59E42 /* MyClewsStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C28C031B0253F400E59E42 /* MyClewsStore.m */; };
+		79C28C071B02557D00E59E42 /* MyClews.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C28C061B02557D00E59E42 /* MyClews.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,21 +36,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		793AB0A41B00C221008D2ED3 /* DetectiveApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DetectiveApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		793AB0A41B00C221008D2ED3 /* QRCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		793AB0A81B00C221008D2ED3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		793AB0A91B00C221008D2ED3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		793AB0AB1B00C221008D2ED3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		793AB0AC1B00C221008D2ED3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		793AB0AE1B00C221008D2ED3 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		793AB0AF1B00C221008D2ED3 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		793AB0B11B00C221008D2ED3 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		793AB0B21B00C221008D2ED3 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		793AB0AE1B00C221008D2ED3 /* MapNextClewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapNextClewViewController.h; sourceTree = "<group>"; };
+		793AB0AF1B00C221008D2ED3 /* MapNextClewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapNextClewViewController.m; sourceTree = "<group>"; };
+		793AB0B11B00C221008D2ED3 /* ScannerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScannerViewController.h; sourceTree = "<group>"; };
+		793AB0B21B00C221008D2ED3 /* ScannerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScannerViewController.m; sourceTree = "<group>"; };
 		793AB0B51B00C221008D2ED3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		793AB0B71B00C221008D2ED3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		793AB0BA1B00C221008D2ED3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		793AB0C01B00C221008D2ED3 /* DetectiveAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DetectiveAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		793AB0C01B00C221008D2ED3 /* QRCaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QRCaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		793AB0C51B00C221008D2ED3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		793AB0C61B00C221008D2ED3 /* DetectiveAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetectiveAppTests.m; sourceTree = "<group>"; };
+		793AB0D01B00C40E008D2ED3 /* MyClewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyClewsViewController.h; sourceTree = "<group>"; };
+		793AB0D11B00C40E008D2ED3 /* MyClewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyClewsViewController.m; sourceTree = "<group>"; };
+		793AB0D31B00C599008D2ED3 /* ClewDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClewDetailViewController.h; sourceTree = "<group>"; };
+		793AB0D41B00C599008D2ED3 /* ClewDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClewDetailViewController.m; sourceTree = "<group>"; };
+		79B1062E1B00DB450087E9F7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		79B106301B00DFA10087E9F7 /* MapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapAnnotation.h; sourceTree = "<group>"; };
+		79B106311B00DFA10087E9F7 /* MapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapAnnotation.m; sourceTree = "<group>"; };
+		79B106341B012E670087E9F7 /* DetectiveApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DetectiveApp.xcdatamodel; sourceTree = "<group>"; };
+		79C28BF01B014AB500E59E42 /* CaseDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaseDetailViewController.h; sourceTree = "<group>"; };
+		79C28BF11B014AB500E59E42 /* CaseDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaseDetailViewController.m; sourceTree = "<group>"; };
+		79C28C021B0253F400E59E42 /* MyClewsStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyClewsStore.h; sourceTree = "<group>"; };
+		79C28C031B0253F400E59E42 /* MyClewsStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyClewsStore.m; sourceTree = "<group>"; };
+		79C28C051B02557D00E59E42 /* MyClews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyClews.h; sourceTree = "<group>"; };
+		79C28C061B02557D00E59E42 /* MyClews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyClews.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79B1062F1B00DB450087E9F7 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +89,7 @@
 		793AB09B1B00C221008D2ED3 = {
 			isa = PBXGroup;
 			children = (
+				79B1062E1B00DB450087E9F7 /* MapKit.framework */,
 				793AB0A61B00C221008D2ED3 /* DetectiveApp */,
 				793AB0C31B00C221008D2ED3 /* DetectiveAppTests */,
 				793AB0A51B00C221008D2ED3 /* Products */,
@@ -75,8 +99,8 @@
 		793AB0A51B00C221008D2ED3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				793AB0A41B00C221008D2ED3 /* DetectiveApp.app */,
-				793AB0C01B00C221008D2ED3 /* DetectiveAppTests.xctest */,
+				793AB0A41B00C221008D2ED3 /* QRCase.app */,
+				793AB0C01B00C221008D2ED3 /* QRCaseTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,12 +108,11 @@
 		793AB0A61B00C221008D2ED3 /* DetectiveApp */ = {
 			isa = PBXGroup;
 			children = (
+				79C28C081B02760800E59E42 /* MinhasPistas */,
+				79B106331B012E670087E9F7 /* DetectiveApp.xcdatamodeld */,
+				79C28BF41B01646700E59E42 /* Controller */,
 				793AB0AB1B00C221008D2ED3 /* AppDelegate.h */,
 				793AB0AC1B00C221008D2ED3 /* AppDelegate.m */,
-				793AB0AE1B00C221008D2ED3 /* FirstViewController.h */,
-				793AB0AF1B00C221008D2ED3 /* FirstViewController.m */,
-				793AB0B11B00C221008D2ED3 /* SecondViewController.h */,
-				793AB0B21B00C221008D2ED3 /* SecondViewController.m */,
 				793AB0B41B00C221008D2ED3 /* Main.storyboard */,
 				793AB0B71B00C221008D2ED3 /* Images.xcassets */,
 				793AB0B91B00C221008D2ED3 /* LaunchScreen.xib */,
@@ -124,12 +147,50 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		79C28BF41B01646700E59E42 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				793AB0AE1B00C221008D2ED3 /* MapNextClewViewController.h */,
+				793AB0AF1B00C221008D2ED3 /* MapNextClewViewController.m */,
+				793AB0B11B00C221008D2ED3 /* ScannerViewController.h */,
+				793AB0B21B00C221008D2ED3 /* ScannerViewController.m */,
+				793AB0D31B00C599008D2ED3 /* ClewDetailViewController.h */,
+				793AB0D41B00C599008D2ED3 /* ClewDetailViewController.m */,
+				79B106301B00DFA10087E9F7 /* MapAnnotation.h */,
+				79B106311B00DFA10087E9F7 /* MapAnnotation.m */,
+				79C28BF01B014AB500E59E42 /* CaseDetailViewController.h */,
+				79C28BF11B014AB500E59E42 /* CaseDetailViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		79C28BFB1B01677E00E59E42 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				79C28C021B0253F400E59E42 /* MyClewsStore.h */,
+				79C28C031B0253F400E59E42 /* MyClewsStore.m */,
+				79C28C051B02557D00E59E42 /* MyClews.h */,
+				79C28C061B02557D00E59E42 /* MyClews.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		79C28C081B02760800E59E42 /* MinhasPistas */ = {
+			isa = PBXGroup;
+			children = (
+				793AB0D01B00C40E008D2ED3 /* MyClewsViewController.h */,
+				793AB0D11B00C40E008D2ED3 /* MyClewsViewController.m */,
+				79C28BFB1B01677E00E59E42 /* Model */,
+			);
+			name = MinhasPistas;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		793AB0A31B00C221008D2ED3 /* DetectiveApp */ = {
+		793AB0A31B00C221008D2ED3 /* QRCase */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 793AB0CA1B00C221008D2ED3 /* Build configuration list for PBXNativeTarget "DetectiveApp" */;
+			buildConfigurationList = 793AB0CA1B00C221008D2ED3 /* Build configuration list for PBXNativeTarget "QRCase" */;
 			buildPhases = (
 				793AB0A01B00C221008D2ED3 /* Sources */,
 				793AB0A11B00C221008D2ED3 /* Frameworks */,
@@ -139,14 +200,14 @@
 			);
 			dependencies = (
 			);
-			name = DetectiveApp;
+			name = QRCase;
 			productName = DetectiveApp;
-			productReference = 793AB0A41B00C221008D2ED3 /* DetectiveApp.app */;
+			productReference = 793AB0A41B00C221008D2ED3 /* QRCase.app */;
 			productType = "com.apple.product-type.application";
 		};
-		793AB0BF1B00C221008D2ED3 /* DetectiveAppTests */ = {
+		793AB0BF1B00C221008D2ED3 /* QRCaseTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 793AB0CD1B00C221008D2ED3 /* Build configuration list for PBXNativeTarget "DetectiveAppTests" */;
+			buildConfigurationList = 793AB0CD1B00C221008D2ED3 /* Build configuration list for PBXNativeTarget "QRCaseTests" */;
 			buildPhases = (
 				793AB0BC1B00C221008D2ED3 /* Sources */,
 				793AB0BD1B00C221008D2ED3 /* Frameworks */,
@@ -157,9 +218,9 @@
 			dependencies = (
 				793AB0C21B00C221008D2ED3 /* PBXTargetDependency */,
 			);
-			name = DetectiveAppTests;
+			name = QRCaseTests;
 			productName = DetectiveAppTests;
-			productReference = 793AB0C01B00C221008D2ED3 /* DetectiveAppTests.xctest */;
+			productReference = 793AB0C01B00C221008D2ED3 /* QRCaseTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -173,6 +234,11 @@
 				TargetAttributes = {
 					793AB0A31B00C221008D2ED3 = {
 						CreatedOnToolsVersion = 6.2;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					793AB0BF1B00C221008D2ED3 = {
 						CreatedOnToolsVersion = 6.2;
@@ -180,7 +246,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 793AB09F1B00C221008D2ED3 /* Build configuration list for PBXProject "DetectiveApp" */;
+			buildConfigurationList = 793AB09F1B00C221008D2ED3 /* Build configuration list for PBXProject "QRCase" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -193,8 +259,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				793AB0A31B00C221008D2ED3 /* DetectiveApp */,
-				793AB0BF1B00C221008D2ED3 /* DetectiveAppTests */,
+				793AB0A31B00C221008D2ED3 /* QRCase */,
+				793AB0BF1B00C221008D2ED3 /* QRCaseTests */,
 			);
 		};
 /* End PBXProject section */
@@ -224,10 +290,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				793AB0B31B00C221008D2ED3 /* SecondViewController.m in Sources */,
+				793AB0D51B00C599008D2ED3 /* ClewDetailViewController.m in Sources */,
+				793AB0B31B00C221008D2ED3 /* ScannerViewController.m in Sources */,
+				79C28C071B02557D00E59E42 /* MyClews.m in Sources */,
+				793AB0D21B00C40E008D2ED3 /* MyClewsViewController.m in Sources */,
 				793AB0AD1B00C221008D2ED3 /* AppDelegate.m in Sources */,
-				793AB0B01B00C221008D2ED3 /* FirstViewController.m in Sources */,
+				793AB0B01B00C221008D2ED3 /* MapNextClewViewController.m in Sources */,
 				793AB0AA1B00C221008D2ED3 /* main.m in Sources */,
+				79C28C041B0253F400E59E42 /* MyClewsStore.m in Sources */,
+				79B106321B00DFA10087E9F7 /* MapAnnotation.m in Sources */,
+				79C28BF21B014AB500E59E42 /* CaseDetailViewController.m in Sources */,
+				79B106351B012E670087E9F7 /* DetectiveApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,7 +317,7 @@
 /* Begin PBXTargetDependency section */
 		793AB0C21B00C221008D2ED3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 793AB0A31B00C221008D2ED3 /* DetectiveApp */;
+			target = 793AB0A31B00C221008D2ED3 /* QRCase */;
 			targetProxy = 793AB0C11B00C221008D2ED3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -351,7 +424,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DetectiveApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = QRCase;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -361,7 +435,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DetectiveApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = QRCase;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -379,8 +454,8 @@
 				);
 				INFOPLIST_FILE = DetectiveAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DetectiveApp.app/DetectiveApp";
+				PRODUCT_NAME = QRCaseTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QRCase.app/QRCase";
 			};
 			name = Debug;
 		};
@@ -394,15 +469,15 @@
 				);
 				INFOPLIST_FILE = DetectiveAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DetectiveApp.app/DetectiveApp";
+				PRODUCT_NAME = QRCaseTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QRCase.app/QRCase";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		793AB09F1B00C221008D2ED3 /* Build configuration list for PBXProject "DetectiveApp" */ = {
+		793AB09F1B00C221008D2ED3 /* Build configuration list for PBXProject "QRCase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				793AB0C81B00C221008D2ED3 /* Debug */,
@@ -411,23 +486,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		793AB0CA1B00C221008D2ED3 /* Build configuration list for PBXNativeTarget "DetectiveApp" */ = {
+		793AB0CA1B00C221008D2ED3 /* Build configuration list for PBXNativeTarget "QRCase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				793AB0CB1B00C221008D2ED3 /* Debug */,
 				793AB0CC1B00C221008D2ED3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		793AB0CD1B00C221008D2ED3 /* Build configuration list for PBXNativeTarget "DetectiveAppTests" */ = {
+		793AB0CD1B00C221008D2ED3 /* Build configuration list for PBXNativeTarget "QRCaseTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				793AB0CE1B00C221008D2ED3 /* Debug */,
 				793AB0CF1B00C221008D2ED3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		79B106331B012E670087E9F7 /* DetectiveApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				79B106341B012E670087E9F7 /* DetectiveApp.xcdatamodel */,
+			);
+			currentVersion = 79B106341B012E670087E9F7 /* DetectiveApp.xcdatamodel */;
+			path = DetectiveApp.xcdatamodeld;
+			sourceTree = SOURCE_ROOT;
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 793AB09C1B00C221008D2ED3 /* Project object */;
 }

@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  MyClewsViewController.h
 //  DetectiveApp
 //
 //  Created by Guilherme Kenji Kodama on 11/05/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
-
+@interface MyClewsViewController : UIViewController
 
 @end
-
