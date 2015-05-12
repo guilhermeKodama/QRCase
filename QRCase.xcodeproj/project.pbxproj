@@ -23,6 +23,7 @@
 		79C28BF21B014AB500E59E42 /* CaseDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C28BF11B014AB500E59E42 /* CaseDetailViewController.m */; };
 		79C28C041B0253F400E59E42 /* MyClewsStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C28C031B0253F400E59E42 /* MyClewsStore.m */; };
 		79C28C071B02557D00E59E42 /* MyClews.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C28C061B02557D00E59E42 /* MyClews.m */; };
+		79C28C0B1B027D1B00E59E42 /* CustomCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C28C0A1B027D1B00E59E42 /* CustomCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,8 @@
 		79C28C031B0253F400E59E42 /* MyClewsStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyClewsStore.m; sourceTree = "<group>"; };
 		79C28C051B02557D00E59E42 /* MyClews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyClews.h; sourceTree = "<group>"; };
 		79C28C061B02557D00E59E42 /* MyClews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyClews.m; sourceTree = "<group>"; };
+		79C28C091B027D1B00E59E42 /* CustomCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCollectionViewCell.h; sourceTree = "<group>"; };
+		79C28C0A1B027D1B00E59E42 /* CustomCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +181,8 @@
 		79C28C081B02760800E59E42 /* MinhasPistas */ = {
 			isa = PBXGroup;
 			children = (
+				79C28C091B027D1B00E59E42 /* CustomCollectionViewCell.h */,
+				79C28C0A1B027D1B00E59E42 /* CustomCollectionViewCell.m */,
 				793AB0D01B00C40E008D2ED3 /* MyClewsViewController.h */,
 				793AB0D11B00C40E008D2ED3 /* MyClewsViewController.m */,
 				79C28BFB1B01677E00E59E42 /* Model */,
@@ -293,6 +298,7 @@
 				793AB0D51B00C599008D2ED3 /* ClewDetailViewController.m in Sources */,
 				793AB0B31B00C221008D2ED3 /* ScannerViewController.m in Sources */,
 				79C28C071B02557D00E59E42 /* MyClews.m in Sources */,
+				79C28C0B1B027D1B00E59E42 /* CustomCollectionViewCell.m in Sources */,
 				793AB0D21B00C40E008D2ED3 /* MyClewsViewController.m in Sources */,
 				793AB0AD1B00C221008D2ED3 /* AppDelegate.m in Sources */,
 				793AB0B01B00C221008D2ED3 /* MapNextClewViewController.m in Sources */,

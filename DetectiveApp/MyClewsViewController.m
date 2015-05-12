@@ -7,8 +7,15 @@
 //
 
 #import "MyClewsViewController.h"
+#import "CustomCollectionViewCell.h"
+#import "MyClewsStore.h"
+#import "MyClews.h"
 
-@interface MyClewsViewController ()
+@interface MyClewsViewController ()<UICollectionViewDataSource,UICollectionViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+
+@property (nonatomic) NSArray *myClews;
 
 @end
 
@@ -16,7 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    _myClews = [[MyClewsStore sharedStore] getAll];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,6 +31,25 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+    NSLog(@"COUNT: %ld",[_myClews count]);
+    return [_myClews count];
+}
 
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    NSString *identifier = @"CustomCollection";
+    
+    CustomCollectionViewCell *cell = (CustomCollectionViewCell*)[collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
+    
+    NSLog(@"%ld",indexPath.row);
+    MyClews *clew = (MyClews*) [_myClews objectAtIndex:indexPath.row];
+    cell.labelName.text = clew.clewDescription;
+    
+    
+    
+    return cell;
+    
+}
 
 @end

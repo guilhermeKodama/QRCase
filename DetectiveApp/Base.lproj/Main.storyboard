@@ -515,7 +515,7 @@
         <!--Minhas Pistas-->
         <scene sceneID="vSx-V4-42J">
             <objects>
-                <viewController id="nGt-QS-ndY" sceneMemberID="viewController">
+                <viewController id="nGt-QS-ndY" customClass="MyClewsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9q5-ie-RJR"/>
                         <viewControllerLayoutGuide type="bottom" id="lqI-v6-fAh"/>
@@ -543,38 +543,59 @@
                             </tableView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sb7-ai-by9">
                                 <rect key="frame" x="0.0" y="28" width="600" height="523"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="523" id="fOh-F2-hs8"/>
                                     <constraint firstAttribute="width" constant="600" id="npB-XT-YD0"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ham-Nm-VUr">
-                                    <size key="itemSize" width="204" height="227"/>
+                                    <size key="itemSize" width="172" height="210"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="jee-rF-l2V">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CustomCollection" id="jee-rF-l2V" customClass="CustomCollectionViewCell">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="204" height="227"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="172" height="210"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FLf-b0-Ij2">
-                                                    <rect key="frame" x="0.0" y="8" width="204" height="152"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="first" translatesAutoresizingMaskIntoConstraints="NO" id="FLf-b0-Ij2">
+                                                    <rect key="frame" x="0.0" y="8" width="172" height="135"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQd-H1-Hu5">
-                                                    <rect key="frame" x="8" y="188" width="188" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQd-H1-Hu5">
+                                                    <rect key="frame" x="8" y="171" width="156" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="eAT-8K-l58"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <constraints>
+                                            <constraint firstItem="FLf-b0-Ij2" firstAttribute="centerX" secondItem="jQd-H1-Hu5" secondAttribute="centerX" id="PgE-xQ-my6"/>
+                                            <constraint firstItem="FLf-b0-Ij2" firstAttribute="top" secondItem="jee-rF-l2V" secondAttribute="topMargin" id="Wt5-10-3fq"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="jQd-H1-Hu5" secondAttribute="bottom" constant="10" id="Yhf-8B-uXa"/>
+                                            <constraint firstItem="FLf-b0-Ij2" firstAttribute="leading" secondItem="jee-rF-l2V" secondAttribute="leading" id="gbG-om-bdG"/>
+                                            <constraint firstItem="jQd-H1-Hu5" firstAttribute="top" secondItem="FLf-b0-Ij2" secondAttribute="bottom" constant="28" id="pup-o2-dPi"/>
+                                            <constraint firstItem="jQd-H1-Hu5" firstAttribute="leading" secondItem="jee-rF-l2V" secondAttribute="leadingMargin" id="pxS-ga-7hz"/>
+                                            <constraint firstAttribute="trailing" secondItem="FLf-b0-Ij2" secondAttribute="trailing" id="wvf-4e-WMY"/>
+                                        </constraints>
+                                        <size key="customSize" width="172" height="210"/>
+                                        <connections>
+                                            <outlet property="imageView" destination="FLf-b0-Ij2" id="kKe-4j-rea"/>
+                                            <outlet property="labelName" destination="jQd-H1-Hu5" id="ylQ-bg-elq"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="nGt-QS-ndY" id="zhR-5z-cRc"/>
+                                    <outlet property="delegate" destination="nGt-QS-ndY" id="nLT-hS-Fxn"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -595,6 +616,9 @@
                         </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Minhas Pistas" image="first" id="YvQ-0c-hMY"/>
+                    <connections>
+                        <outlet property="collectionView" destination="sb7-ai-by9" id="Aa7-jF-ttO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jT3-CB-fuq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
