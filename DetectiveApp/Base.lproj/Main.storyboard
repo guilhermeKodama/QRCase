@@ -345,7 +345,7 @@
                                     <constraint firstAttribute="height" constant="221" id="cqI-uf-g8Y"/>
                                     <constraint firstAttribute="width" constant="568" id="svu-Ed-y3Q"/>
                                 </constraints>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -364,7 +364,7 @@
                                     <action selector="nextClewClicked:" destination="ocL-JF-CaK" eventType="touchUpInside" id="rRU-6H-qAb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27M-II-niX">
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27M-II-niX">
                                 <rect key="frame" x="168" y="409" width="137" height="35"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -429,7 +429,7 @@
         <!--Case-->
         <scene sceneID="Jlp-UG-LRr">
             <objects>
-                <viewController id="hge-9V-vc4" sceneMemberID="viewController">
+                <viewController id="hge-9V-vc4" customClass="CaseOverviewViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="E4a-tb-gMH"/>
                         <viewControllerLayoutGuide type="bottom" id="pnT-2E-0Rh"/>
@@ -438,6 +438,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notes-bg" translatesAutoresizingMaskIntoConstraints="NO" id="ikf-Or-AgW">
+                                <rect key="frame" x="22" y="57" width="557" height="587"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LoG-Oo-Dhn">
                                 <rect key="frame" x="160" y="28" width="269" height="168"/>
                                 <constraints>
@@ -455,51 +458,62 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f8Q-bd-UGt">
-                                <rect key="frame" x="16" y="254" width="568" height="203"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo-bg" translatesAutoresizingMaskIntoConstraints="NO" id="gMK-5p-9Tf">
+                                <rect key="frame" x="207" y="100" width="187" height="162"/>
+                            </imageView>
+                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f8Q-bd-UGt">
+                                <rect key="frame" x="61" y="305" width="466" height="203"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="203" id="88N-X0-pZA"/>
-                                    <constraint firstAttribute="width" constant="568" id="fJV-gT-wPg"/>
+                                    <constraint firstAttribute="height" constant="203" id="gib-g8-dTC"/>
                                 </constraints>
                                 <string key="text">Um terrível crime aconteceu a poucas horas aqui nesse local , o Sr.Kodama foi brutalmente assassinado com fortes golpes na sua cabeça , amassando completamente o seu crânio , um claro crime de ódio , agora você tem a responsabilidade de colocar o culpado atrás das grades</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="first" translatesAutoresizingMaskIntoConstraints="NO" id="gMK-5p-9Tf">
-                                <rect key="frame" x="145" y="64" width="310" height="182"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Case Overview" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAE-7I-ODb">
+                                <rect key="frame" x="22" y="71" width="557" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="310" id="88d-Xn-Pdr"/>
-                                    <constraint firstAttribute="height" constant="182" id="JUV-Lj-hoP"/>
+                                    <constraint firstAttribute="height" constant="21" id="O8t-iv-VyA"/>
                                 </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Case Overview" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAE-7I-ODb">
-                                <rect key="frame" x="242" y="28" width="116" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="OU8-Lu-Yiv"/>
-                                    <constraint firstAttribute="width" constant="116" id="o1f-zV-Omu"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L12-Nt-M7z">
+                                <rect key="frame" x="436" y="429" width="137" height="35"/>
+                                <color key="backgroundColor" red="0.98431372549019602" green="0.98431372549019602" blue="0.89411764705882357" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="9wb-tN-x9m"/>
+                                    <constraint firstAttribute="width" constant="137" id="UDy-db-qJ9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Próxima Pista" backgroundImage="button-bg">
+                                    <color key="titleColor" red="0.40784313729999999" green="0.1529411765" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="f8Q-bd-UGt" firstAttribute="top" secondItem="gMK-5p-9Tf" secondAttribute="bottom" constant="8" id="8uQ-Zb-RAW"/>
-                            <constraint firstItem="mAE-7I-ODb" firstAttribute="leading" secondItem="0fd-4F-Yup" secondAttribute="leadingMargin" constant="226" id="HIc-0r-oKW"/>
-                            <constraint firstItem="mAE-7I-ODb" firstAttribute="top" secondItem="E4a-tb-gMH" secondAttribute="bottom" constant="8" id="J1e-Zy-H4c"/>
+                            <constraint firstItem="ikf-Or-AgW" firstAttribute="top" secondItem="E4a-tb-gMH" secondAttribute="bottom" constant="37" id="22S-yQ-UFk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mAE-7I-ODb" secondAttribute="trailing" constant="5" id="8Eq-qI-KBE"/>
+                            <constraint firstItem="pnT-2E-0Rh" firstAttribute="top" secondItem="gMK-5p-9Tf" secondAttribute="bottom" constant="289" id="9xa-MQ-ksr"/>
+                            <constraint firstItem="mAE-7I-ODb" firstAttribute="leading" secondItem="0fd-4F-Yup" secondAttribute="leadingMargin" constant="6" id="QfF-LS-n4a"/>
                             <constraint firstItem="hQh-wq-WRz" firstAttribute="top" secondItem="LoG-Oo-Dhn" secondAttribute="bottom" constant="99" id="QnE-Ec-WNw"/>
-                            <constraint firstItem="gMK-5p-9Tf" firstAttribute="top" secondItem="mAE-7I-ODb" secondAttribute="bottom" constant="15" id="W25-ZJ-pYP"/>
+                            <constraint firstItem="f8Q-bd-UGt" firstAttribute="leading" secondItem="0fd-4F-Yup" secondAttribute="leadingMargin" constant="45" id="WrF-F5-QgU"/>
                             <constraint firstItem="hQh-wq-WRz" firstAttribute="top" secondItem="LoG-Oo-Dhn" secondAttribute="bottom" constant="99" id="X4L-ub-w0S"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="mAE-7I-ODb" secondAttribute="trailing" constant="226" id="Z0R-kX-77U"/>
-                            <constraint firstItem="f8Q-bd-UGt" firstAttribute="top" secondItem="gMK-5p-9Tf" secondAttribute="bottom" constant="8" id="af5-Sm-xEY"/>
-                            <constraint firstItem="pnT-2E-0Rh" firstAttribute="top" secondItem="f8Q-bd-UGt" secondAttribute="bottom" constant="94" id="b4A-yg-Bm6"/>
-                            <constraint firstItem="f8Q-bd-UGt" firstAttribute="trailing" secondItem="0fd-4F-Yup" secondAttribute="trailingMargin" id="dbY-W6-2PM"/>
-                            <constraint firstItem="f8Q-bd-UGt" firstAttribute="leading" secondItem="0fd-4F-Yup" secondAttribute="leadingMargin" id="fLE-MA-39Y"/>
-                            <constraint firstItem="gMK-5p-9Tf" firstAttribute="top" secondItem="mAE-7I-ODb" secondAttribute="bottom" constant="15" id="owl-gf-ada"/>
-                            <constraint firstItem="gMK-5p-9Tf" firstAttribute="leading" secondItem="0fd-4F-Yup" secondAttribute="leadingMargin" constant="129" id="t4k-ey-gbF"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="gMK-5p-9Tf" secondAttribute="trailing" constant="129" id="tt0-WH-LjE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gMK-5p-9Tf" secondAttribute="trailing" constant="190" id="bFb-Nw-Bmz"/>
+                            <constraint firstItem="ikf-Or-AgW" firstAttribute="leading" secondItem="0fd-4F-Yup" secondAttribute="leadingMargin" constant="6" id="bPs-9O-Y0z"/>
+                            <constraint firstItem="gMK-5p-9Tf" firstAttribute="leading" secondItem="0fd-4F-Yup" secondAttribute="leadingMargin" constant="191" id="e2P-YE-zVO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="f8Q-bd-UGt" secondAttribute="trailing" constant="57" id="gfo-cb-OOg"/>
+                            <constraint firstItem="mAE-7I-ODb" firstAttribute="top" secondItem="E4a-tb-gMH" secondAttribute="bottom" constant="51" id="iIn-t9-HjO"/>
+                            <constraint firstItem="gMK-5p-9Tf" firstAttribute="top" secondItem="E4a-tb-gMH" secondAttribute="bottom" constant="80" id="kIP-E3-X2z"/>
+                            <constraint firstItem="L12-Nt-M7z" firstAttribute="top" secondItem="ikf-Or-AgW" secondAttribute="bottom" constant="-215" id="ptb-TG-vTl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ikf-Or-AgW" secondAttribute="trailing" constant="5" id="teE-Wy-keF"/>
+                            <constraint firstItem="L12-Nt-M7z" firstAttribute="leading" secondItem="ikf-Or-AgW" secondAttribute="trailing" constant="-143" id="ub2-sA-Pic"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="ikf-Or-AgW" secondAttribute="bottom" constant="-44" id="wzC-zD-ThZ"/>
+                            <constraint firstItem="f8Q-bd-UGt" firstAttribute="top" secondItem="E4a-tb-gMH" secondAttribute="bottom" constant="285" id="yvN-L2-CA7"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -674,6 +688,7 @@
         <image name="clues-button" width="33" height="33"/>
         <image name="first" width="30" height="30"/>
         <image name="map-button" width="33" height="31"/>
+        <image name="notes-bg" width="302" height="586"/>
         <image name="overview-button" width="23" height="31"/>
         <image name="photo-bg" width="128" height="154"/>
         <image name="second" width="30" height="30"/>
