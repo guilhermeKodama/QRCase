@@ -20,6 +20,19 @@
     
     //Changes BG Color and Selected.
     
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UITabBarController *tbc = [sb instantiateInitialViewController];
+    self.window.rootViewController = tbc;
+    UITabBar *tb = tbc.tabBar;
+    
+    NSArray *items = tb.items;
+    
+    for (UITabBarItem *tbi in items) {
+        UIImage *image = tbi.image;
+        tbi.selectedImage = image;
+        tbi.image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    }
+    
     [[UITabBar appearance] setTintColor:[UIColor colorWithRed:(float)104/255 green:(float)39/255 blue:(float)53/255 alpha:1]];
     [[UITabBar appearance] setBarTintColor:[UIColor colorWithRed:(float)229/255 green:(float)199/255 blue:(float)42/255 alpha:1]];
 
