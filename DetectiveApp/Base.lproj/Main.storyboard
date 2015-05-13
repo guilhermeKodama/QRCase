@@ -227,6 +227,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notes-bg" translatesAutoresizingMaskIntoConstraints="NO" id="CHM-5d-h3K">
+                                <rect key="frame" x="22" y="139" width="557" height="587"/>
+                            </imageView>
                             <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Teste" translatesAutoresizingMaskIntoConstraints="NO" id="eXI-fI-xB9">
                                 <rect key="frame" x="76" y="244" width="403" height="179"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -276,9 +279,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notes-bg" translatesAutoresizingMaskIntoConstraints="NO" id="CHM-5d-h3K">
-                                <rect key="frame" x="22" y="139" width="557" height="587"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -653,11 +653,11 @@
             </objects>
             <point key="canvasLocation" x="670" y="1199"/>
         </scene>
-        <!--Item-->
+        <!--Minhas Pistas-->
         <scene sceneID="GOb-VR-hOC">
             <objects>
                 <navigationController id="8rc-JP-Qnl" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="clues-button" id="QAy-5G-JSU"/>
+                    <tabBarItem key="tabBarItem" title="Minhas Pistas" image="clues-button" id="QAy-5G-JSU"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="pDJ-F7-TJe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -682,9 +682,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Teste" translatesAutoresizingMaskIntoConstraints="NO" id="vDO-pY-oAP">
+                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Teste" translatesAutoresizingMaskIntoConstraints="NO" id="vDO-pY-oAP">
                                 <rect key="frame" x="76" y="244" width="403" height="179"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="403" id="bdO-7t-hzC"/>
                                 </constraints>
@@ -707,6 +706,9 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notes-bg" translatesAutoresizingMaskIntoConstraints="NO" id="R9D-sa-trd">
+                                <rect key="frame" x="16" y="99" width="568" height="508"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MBe-NW-AVL">
                                 <rect key="frame" x="64" y="445" width="485" height="42"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -723,14 +725,18 @@
                         <constraints>
                             <constraint firstItem="7NE-kT-aOW" firstAttribute="top" secondItem="C1S-GB-FEJ" secondAttribute="bottom" constant="443" id="1NW-bS-dVJ"/>
                             <constraint firstItem="vDO-pY-oAP" firstAttribute="leading" secondItem="Eew-3y-Tj5" secondAttribute="leadingMargin" constant="60" id="5V1-C0-b9y"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="R9D-sa-trd" secondAttribute="bottom" constant="-7" id="Aei-Nd-4ip"/>
                             <constraint firstItem="MBe-NW-AVL" firstAttribute="top" secondItem="vDO-pY-oAP" secondAttribute="bottom" constant="22" id="JcI-cS-9KA"/>
+                            <constraint firstItem="R9D-sa-trd" firstAttribute="trailing" secondItem="Eew-3y-Tj5" secondAttribute="trailingMargin" id="NS4-37-13o"/>
                             <constraint firstItem="onK-hW-cbs" firstAttribute="top" secondItem="C1S-GB-FEJ" secondAttribute="top" id="SOI-2Y-43F"/>
                             <constraint firstItem="MBe-NW-AVL" firstAttribute="leading" secondItem="Eew-3y-Tj5" secondAttribute="leadingMargin" constant="48" id="T9Q-hs-oBG"/>
                             <constraint firstItem="onK-hW-cbs" firstAttribute="leading" secondItem="Eew-3y-Tj5" secondAttribute="leading" constant="170" id="TFj-nd-Mji"/>
                             <constraint firstItem="C1S-GB-FEJ" firstAttribute="top" secondItem="48V-yD-hyF" secondAttribute="bottom" constant="23" id="Y3a-2l-Yza"/>
+                            <constraint firstItem="R9D-sa-trd" firstAttribute="top" secondItem="48V-yD-hyF" secondAttribute="bottom" constant="35" id="aU2-ND-F3M"/>
                             <constraint firstItem="7NE-kT-aOW" firstAttribute="top" secondItem="vDO-pY-oAP" secondAttribute="bottom" constant="128" id="h66-nW-i2M"/>
                             <constraint firstItem="C1S-GB-FEJ" firstAttribute="leading" secondItem="Eew-3y-Tj5" secondAttribute="leadingMargin" constant="-7" id="qOZ-cq-nKR"/>
                             <constraint firstAttribute="trailingMargin" secondItem="MBe-NW-AVL" secondAttribute="trailing" constant="35" id="w96-ec-AsV"/>
+                            <constraint firstItem="R9D-sa-trd" firstAttribute="leading" secondItem="Eew-3y-Tj5" secondAttribute="leadingMargin" id="wu2-KW-yKY"/>
                             <constraint firstItem="vDO-pY-oAP" firstAttribute="top" secondItem="onK-hW-cbs" secondAttribute="bottom" constant="29" id="yuh-oU-e2c"/>
                         </constraints>
                         <variation key="default">

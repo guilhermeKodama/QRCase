@@ -32,6 +32,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
    
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"backgroundapp"]];
+
+    
     _clews = [_jsonResult objectForKey:@"clew"];
     NSLog(@"PISTAS: %@",_clews);
     NSLog(@"PISTA ATUAL: %@",[_clews objectAtIndex:_currentPosition]);
