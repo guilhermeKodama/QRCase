@@ -30,6 +30,16 @@
     [super viewDidLoad];
     _myClews = [[MyClewsStore sharedStore] getAll];
     
+    for (MyClews *clew in _myClews) {
+        NSLog(@"PISTAAAAA :%@",clew.clewDescription);
+        NSLog(@"PISTAAAAA :%@",clew.clewDescription);
+        NSLog(@"PISTAAAAA :%@",clew.clewDescription);
+        NSLog(@"PISTAAAAA :%@",clew.clewDescription);
+        NSLog(@"PISTAAAAA :%@",clew.clewDescription);
+        NSLog(@"PISTAAAAA :%@",clew.clewDescription);
+        NSLog(@"PISTAAAAA :%@",clew.clewDescription);
+    }
+    
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"backgroundapp"]];
     
     //codigo NSFectechedResultsControllerDelegate
@@ -49,7 +59,7 @@
     return [[MyClewsStore sharedStore] fetchedResultsController];
 }
 
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)collectionView:(UICollectionView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         MyClews *clew = [[self fetchedResultsController] objectAtIndexPath:indexPath];
