@@ -6,17 +6,17 @@
 //  Copyright (c) 2015 Guilherme Kenji Kodama. All rights reserved.
 //
 
-#import "ClewDetailViewController.h"
+#import "QRClewDetailViewController.h"
 #import "MyClewsStore.h"
 #import "MyClews.h"
 
-@interface ClewDetailViewController ()
+@interface QRClewDetailViewController ()
 @property (weak, nonatomic) IBOutlet UITextView *labelClewDescription;
 @property (nonatomic) NSArray *clews;
 @property (nonatomic) int currentPosition;
 @end
 
-@implementation ClewDetailViewController
+@implementation QRClewDetailViewController
 
 
 - (id) init{

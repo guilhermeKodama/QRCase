@@ -16,7 +16,7 @@
 		793AB0BB1B00C221008D2ED3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 793AB0B91B00C221008D2ED3 /* LaunchScreen.xib */; };
 		793AB0C71B00C221008D2ED3 /* DetectiveAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 793AB0C61B00C221008D2ED3 /* DetectiveAppTests.m */; };
 		793AB0D21B00C40E008D2ED3 /* MyClewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 793AB0D11B00C40E008D2ED3 /* MyClewsViewController.m */; };
-		793AB0D51B00C599008D2ED3 /* ClewDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 793AB0D41B00C599008D2ED3 /* ClewDetailViewController.m */; };
+		793AB0D51B00C599008D2ED3 /* QRClewDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 793AB0D41B00C599008D2ED3 /* QRClewDetailViewController.m */; };
 		79B1062F1B00DB450087E9F7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79B1062E1B00DB450087E9F7 /* MapKit.framework */; };
 		79B106321B00DFA10087E9F7 /* MapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B106311B00DFA10087E9F7 /* MapAnnotation.m */; };
 		79B106351B012E670087E9F7 /* DetectiveApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 79B106331B012E670087E9F7 /* DetectiveApp.xcdatamodeld */; };
@@ -55,8 +55,8 @@
 		793AB0C61B00C221008D2ED3 /* DetectiveAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetectiveAppTests.m; sourceTree = "<group>"; };
 		793AB0D01B00C40E008D2ED3 /* MyClewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyClewsViewController.h; sourceTree = "<group>"; };
 		793AB0D11B00C40E008D2ED3 /* MyClewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyClewsViewController.m; sourceTree = "<group>"; };
-		793AB0D31B00C599008D2ED3 /* ClewDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClewDetailViewController.h; sourceTree = "<group>"; };
-		793AB0D41B00C599008D2ED3 /* ClewDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClewDetailViewController.m; sourceTree = "<group>"; };
+		793AB0D31B00C599008D2ED3 /* QRClewDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRClewDetailViewController.h; sourceTree = "<group>"; };
+		793AB0D41B00C599008D2ED3 /* QRClewDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRClewDetailViewController.m; sourceTree = "<group>"; };
 		79B1062E1B00DB450087E9F7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		79B106301B00DFA10087E9F7 /* MapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapAnnotation.h; sourceTree = "<group>"; };
 		79B106311B00DFA10087E9F7 /* MapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapAnnotation.m; sourceTree = "<group>"; };
@@ -114,7 +114,9 @@
 		793AB0A61B00C221008D2ED3 /* DetectiveApp */ = {
 			isa = PBXGroup;
 			children = (
-				79C28C081B02760800E59E42 /* MinhasPistas */,
+				79C28C101B02DADA00E59E42 /* Suspeitos */,
+				79C28C0C1B02D59C00E59E42 /* Detalhes da Pista */,
+				79C28C081B02760800E59E42 /* Minhas Pistas */,
 				79B106331B012E670087E9F7 /* DetectiveApp.xcdatamodeld */,
 				79C28BF41B01646700E59E42 /* Controller */,
 				793AB0AB1B00C221008D2ED3 /* AppDelegate.h */,
@@ -160,8 +162,8 @@
 				793AB0AF1B00C221008D2ED3 /* MapNextClewViewController.m */,
 				793AB0B11B00C221008D2ED3 /* ScannerViewController.h */,
 				793AB0B21B00C221008D2ED3 /* ScannerViewController.m */,
-				793AB0D31B00C599008D2ED3 /* ClewDetailViewController.h */,
-				793AB0D41B00C599008D2ED3 /* ClewDetailViewController.m */,
+				793AB0D31B00C599008D2ED3 /* QRClewDetailViewController.h */,
+				793AB0D41B00C599008D2ED3 /* QRClewDetailViewController.m */,
 				79B106301B00DFA10087E9F7 /* MapAnnotation.h */,
 				79B106311B00DFA10087E9F7 /* MapAnnotation.m */,
 				C84CB46B1B02A9F500090C1D /* CaseOverviewViewController.h */,
@@ -183,7 +185,7 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
-		79C28C081B02760800E59E42 /* MinhasPistas */ = {
+		79C28C081B02760800E59E42 /* Minhas Pistas */ = {
 			isa = PBXGroup;
 			children = (
 				79C28C091B027D1B00E59E42 /* CustomCollectionViewCell.h */,
@@ -192,7 +194,37 @@
 				793AB0D11B00C40E008D2ED3 /* MyClewsViewController.m */,
 				79C28BFB1B01677E00E59E42 /* Model */,
 			);
-			name = MinhasPistas;
+			name = "Minhas Pistas";
+			sourceTree = "<group>";
+		};
+		79C28C0C1B02D59C00E59E42 /* Detalhes da Pista */ = {
+			isa = PBXGroup;
+			children = (
+				79C28C0D1B02D61800E59E42 /* MyClewDetailViewController.h */,
+				79C28C0E1B02D61800E59E42 /* MyClewDetailViewController.m */,
+			);
+			name = "Detalhes da Pista";
+			sourceTree = "<group>";
+		};
+		79C28C101B02DADA00E59E42 /* Suspeitos */ = {
+			isa = PBXGroup;
+			children = (
+				79C28C111B02DAF800E59E42 /* SuspectViewController.h */,
+				79C28C121B02DAF800E59E42 /* SuspectViewController.m */,
+				79C28C141B02DBA200E59E42 /* Model */,
+			);
+			name = Suspeitos;
+			sourceTree = "<group>";
+		};
+		79C28C141B02DBA200E59E42 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				79C28C181B02DC4000E59E42 /* SuspectStore.h */,
+				79C28C191B02DC4000E59E42 /* SuspectStore.m */,
+				79C28C1E1B02E69800E59E42 /* Suspect.h */,
+				79C28C1F1B02E69800E59E42 /* Suspect.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,16 +332,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				793AB0D51B00C599008D2ED3 /* ClewDetailViewController.m in Sources */,
+				79C28C131B02DAF800E59E42 /* SuspectViewController.m in Sources */,
+				793AB0D51B00C599008D2ED3 /* QRClewDetailViewController.m in Sources */,
 				793AB0B31B00C221008D2ED3 /* ScannerViewController.m in Sources */,
 				79C28C071B02557D00E59E42 /* MyClews.m in Sources */,
+				79C28C0F1B02D61800E59E42 /* MyClewDetailViewController.m in Sources */,
 				79C28C0B1B027D1B00E59E42 /* CustomCollectionViewCell.m in Sources */,
 				793AB0D21B00C40E008D2ED3 /* MyClewsViewController.m in Sources */,
 				793AB0AD1B00C221008D2ED3 /* AppDelegate.m in Sources */,
 				793AB0B01B00C221008D2ED3 /* MapNextClewViewController.m in Sources */,
 				793AB0AA1B00C221008D2ED3 /* main.m in Sources */,
 				79C28C041B0253F400E59E42 /* MyClewsStore.m in Sources */,
+				79C28C201B02E69800E59E42 /* Suspect.m in Sources */,
 				79B106321B00DFA10087E9F7 /* MapAnnotation.m in Sources */,
+				79C28C1A1B02DC4000E59E42 /* SuspectStore.m in Sources */,
 				79C28BF21B014AB500E59E42 /* CaseDetailViewController.m in Sources */,
 				C84CB46D1B02A9F500090C1D /* CaseOverviewViewController.m in Sources */,
 				79B106351B012E670087E9F7 /* DetectiveApp.xcdatamodeld in Sources */,

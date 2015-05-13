@@ -7,7 +7,7 @@
 //
 
 #import "ScannerViewController.h"
-#import "ClewDetailViewController.h"
+#import "QRClewDetailViewController.h"
 #import "CaseDetailViewController.h"
 #import <AVFoundation/AVFoundation.h>
 
@@ -29,8 +29,7 @@
 
 @implementation ScannerViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     
     hasResult = false;
@@ -135,7 +134,7 @@
     if ([segue.identifier isEqualToString:@"segueClewDetail"]){
         
         
-            ClewDetailViewController *clewDetailController = segue.destinationViewController;
+            QRClewDetailViewController *clewDetailController = segue.destinationViewController;
             clewDetailController.clewDescription = [result objectForKey:@"desc"];
             clewDetailController.jsonResult = result;
 
