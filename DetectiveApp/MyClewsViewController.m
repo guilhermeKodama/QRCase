@@ -14,8 +14,9 @@
 
 @interface MyClewsViewController ()<UICollectionViewDataSource,UICollectionViewDelegate, NSFetchedResultsControllerDelegate>
 
-
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+
+
 @property (nonatomic, readonly) NSFetchedResultsController *fetchedResultsController;
 
 @property (nonatomic) NSArray *myClews;
@@ -40,7 +41,7 @@
         NSLog(@"PISTAAAAA :%@",clew.clewDescription);
     }
     
-    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"backgroundapp"]];
+    //self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"backgroundapp"]];
     
     //codigo NSFectechedResultsControllerDelegate
     [[MyClewsStore sharedStore] fetchedResultsController].delegate = self;
@@ -59,7 +60,7 @@
     return [[MyClewsStore sharedStore] fetchedResultsController];
 }
 
-- (void)collectionView:(UICollectionView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+/*- (void)collectionView:(UICollectionView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         MyClews *clew = [[self fetchedResultsController] objectAtIndexPath:indexPath];
@@ -67,7 +68,7 @@
         [store removeUnidadeFederativa:clew];
         [store saveChanges];
     }
-}
+}*/
 
 
 - (void)controller:(NSFetchedResultsController *)controller didChangeObject:(id)anObject atIndexPath:(NSIndexPath *)indexPath forChangeType:(NSFetchedResultsChangeType)type newIndexPath:(NSIndexPath *)newIndexPath {
@@ -129,7 +130,6 @@
     //MyClews *clew = (MyClews*) [_myClews objectAtIndex:indexPath.row];
     MyClews *clew = [self.fetchedResultsController objectAtIndexPath:indexPath];
     cell.labelName.text = clew.clewDescription;
-    
     
     
     return cell;

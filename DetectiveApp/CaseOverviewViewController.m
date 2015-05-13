@@ -2,11 +2,12 @@
 //  CaseOverviewViewController.m
 //  QRCase
 //
-//  Created by Carlos Soares on 5/12/15.
+//  Created by Guilherme Kenji Kodama on 13/05/15.
 //  Copyright (c) 2015 Guilherme Kenji Kodama. All rights reserved.
 //
 
 #import "CaseOverviewViewController.h"
+#import "MapNextClewViewController.h"
 
 @interface CaseOverviewViewController ()
 
@@ -17,12 +18,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-        self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"backgroundapp"]];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)nextClewClicked:(id)sender {
+    
+    [MapNextClewViewController setLat:-3.136596];
+    [MapNextClewViewController setLng:-59.979848];
 }
 
 /*
