@@ -10,6 +10,7 @@
 #import "MapNextClewViewController.h"
 
 @interface CaseOverviewViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *nextClewButton;
 
 @end
 
@@ -28,8 +29,13 @@
 }
 - (IBAction)nextClewClicked:(id)sender {
     
-    [MapNextClewViewController setLat:-3.136596];
-    [MapNextClewViewController setLng:-59.979848];
+    if([MapNextClewViewController getLat] == 0 && [MapNextClewViewController getLng] == 0){
+    
+        [MapNextClewViewController setLat:-3.136596];
+        [MapNextClewViewController setLng:-59.979848];
+        
+        _nextClewButton.hidden = YES;
+    }
 }
 
 /*

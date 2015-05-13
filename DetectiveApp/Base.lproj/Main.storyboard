@@ -530,7 +530,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Próxima Pista" backgroundImage="button-bg">
+                                <state key="normal" title="Iniciar caso" backgroundImage="button-bg">
                                     <color key="titleColor" red="0.40784313729999999" green="0.1529411765" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -568,6 +568,9 @@
                         </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Case" image="overview-button" selectedImage="first" id="aVL-Q1-gJE"/>
+                    <connections>
+                        <outlet property="nextClewButton" destination="L12-Nt-M7z" id="ldh-xo-qnh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fer-9V-Ifd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
