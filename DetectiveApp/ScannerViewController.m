@@ -10,6 +10,7 @@
 #import "QRClewDetailViewController.h"
 #import "CaseDetailViewController.h"
 #import <AVFoundation/AVFoundation.h>
+#import "MapNextClewViewController.h"
 
 @interface ScannerViewController ()<AVCaptureMetadataOutputObjectsDelegate>
 {
@@ -118,6 +119,10 @@
                      [self performSegueWithIdentifier:@"segueClewDetail" sender:self];
                  }
                 
+                /*Setar proxima pista*/
+                
+                [MapNextClewViewController setLat:[[result objectForKey:@"lat"] doubleValue]];
+                [MapNextClewViewController setLng:[[result objectForKey:@"lng"] doubleValue]];
                 
             }
             
