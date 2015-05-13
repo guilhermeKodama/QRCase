@@ -18,7 +18,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    //Changes BG Color and Selected.
+    //Define a cor do ícone da Tab Bar de acordo com a cor que foi determinada pelo designer
+    //e exportada no assets
+    //Link: http://stackoverflow.com/a/18989161
     
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     UITabBarController *tbc = [sb instantiateInitialViewController];
@@ -30,11 +32,28 @@
     for (UITabBarItem *tbi in items) {
         UIImage *image = tbi.image;
         tbi.selectedImage = image;
+        
+        // Essa é a linha que faz a mágica para cada item
         tbi.image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        
     }
     
+    //Se a imagem for vazada não precisa definir o outro estado da imagem (selecionado)
+    //É preciso pesquisar mais tarde como fazer isso.
+    
+    // Vermelho/Icone
     [[UITabBar appearance] setTintColor:[UIColor colorWithRed:(float)104/255 green:(float)39/255 blue:(float)53/255 alpha:1]];
+    
+    // Amarelo/Barra
     [[UITabBar appearance] setBarTintColor:[UIColor colorWithRed:(float)229/255 green:(float)199/255 blue:(float)42/255 alpha:1]];
+    
+    // Amarelo/Icone
+    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:                                                        [UIColor colorWithRed:(float)162/255 green:(float)138/255 blue:(float)48/255 alpha:1], UITextAttributeTextColor, nil] forState:UIControlStateNormal];
+    
+    
+    
+    //A Tab Bar não é 100% opaca!
+    [[UITabBar appearance] setTranslucent:FALSE ];
 
     return YES;
 }
