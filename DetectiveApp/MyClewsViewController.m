@@ -10,6 +10,7 @@
 #import "CustomCollectionViewCell.h"
 #import "MyClewsStore.h"
 #import "MyClews.h"
+#import "MyClewDetailViewController.h"
 
 @interface MyClewsViewController ()<UICollectionViewDataSource,UICollectionViewDelegate, NSFetchedResultsControllerDelegate>
 
@@ -17,6 +18,8 @@
 @property (nonatomic, readonly) NSFetchedResultsController *fetchedResultsController;
 
 @property (nonatomic) NSArray *myClews;
+
+@property (nonatomic) MyClews *selectedClew;
 
 @end
 
@@ -84,7 +87,7 @@
 
 /*
  ---------------------------------
-            TABLEVIEW
+            COLLECTIONVIEW
  ---------------------------------
  */
 
@@ -110,5 +113,27 @@
     return cell;
     
 }
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+
+    _selectedClew = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    [self performSegueWithIdentifier:@"segueMyClewDetail" sender:self];
+    
+   
+}
+
+
+/*
+ ---------------------------------
+        COLLECTIONVIEW
+ ---------------------------------
+ */
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    MyClewDetailViewController *clewDetailController = segue.destinationViewController;
+    clewDetailController.clew = _selectedClew;
+
+}
+
 
 @end

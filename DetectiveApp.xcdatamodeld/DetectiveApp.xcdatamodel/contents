@@ -4,7 +4,16 @@
         <attribute name="clewDescription" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
+    <entity name="Suspect" representedClassName="Suspect" syncable="YES">
+        <attribute name="age" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isGuilty" optional="YES" attributeType="Boolean" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="job" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="suspectDescription" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <elements>
         <element name="MyClews" positionX="-36" positionY="9" width="128" height="75"/>
+        <element name="Suspect" positionX="0" positionY="63" width="128" height="135"/>
     </elements>
 </model>

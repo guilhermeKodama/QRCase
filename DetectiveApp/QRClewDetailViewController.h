@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ClewDetailViewController : UIViewController
+@interface QRClewDetailViewController : UIViewController
 
 @property (nonatomic) NSString* clewDescription;
 @property (nonatomic) NSDictionary *jsonResult;
