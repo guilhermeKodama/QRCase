@@ -47,8 +47,13 @@
     // Amarelo/Barra
     [[UITabBar appearance] setBarTintColor:[UIColor colorWithRed:(float)229/255 green:(float)199/255 blue:(float)42/255 alpha:1]];
     
-    // Amarelo/Icone
-    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:                                                        [UIColor colorWithRed:(float)162/255 green:(float)138/255 blue:(float)48/255 alpha:1], UITextAttributeTextColor, nil] forState:UIControlStateNormal];
+    // Cores do Texto #1 Amarelo (UNSELECTED)  #2 Vermelho (SELECTED)
+    
+    [[UITabBarItem appearance] setTitleTextAttributes:@{ NSForegroundColorAttributeName : [UIColor colorWithRed:(float)162/255 green:(float)138/255 blue:(float)48/255 alpha:1] }
+                                             forState:UIControlStateNormal];
+    [[UITabBarItem appearance] setTitleTextAttributes:@{ NSForegroundColorAttributeName : [UIColor colorWithRed:(float)104/255 green:(float)39/255 blue:(float)53/255 alpha:1] }
+                                             forState:UIControlStateSelected];
+
     
     
     
