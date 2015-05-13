@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7907A3491B03807F00918B1B /* CaseOverviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7907A3481B03807F00918B1B /* CaseOverviewViewController.m */; };
 		793AB0AA1B00C221008D2ED3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 793AB0A91B00C221008D2ED3 /* main.m */; };
 		793AB0AD1B00C221008D2ED3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 793AB0AC1B00C221008D2ED3 /* AppDelegate.m */; };
 		793AB0B01B00C221008D2ED3 /* MapNextClewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 793AB0AF1B00C221008D2ED3 /* MapNextClewViewController.m */; };
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7907A3471B03807F00918B1B /* CaseOverviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaseOverviewViewController.h; sourceTree = "<group>"; };
+		7907A3481B03807F00918B1B /* CaseOverviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaseOverviewViewController.m; sourceTree = "<group>"; };
 		793AB0A41B00C221008D2ED3 /* QRCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		793AB0A81B00C221008D2ED3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		793AB0A91B00C221008D2ED3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -175,10 +178,10 @@
 				793AB0D41B00C599008D2ED3 /* QRClewDetailViewController.m */,
 				79B106301B00DFA10087E9F7 /* MapAnnotation.h */,
 				79B106311B00DFA10087E9F7 /* MapAnnotation.m */,
-				C84CB46B1B02A9F500090C1D /* CaseOverviewViewController.h */,
-				C84CB46C1B02A9F500090C1D /* CaseOverviewViewController.m */,
 				79C28BF01B014AB500E59E42 /* CaseDetailViewController.h */,
 				79C28BF11B014AB500E59E42 /* CaseDetailViewController.m */,
+				7907A3471B03807F00918B1B /* CaseOverviewViewController.h */,
+				7907A3481B03807F00918B1B /* CaseOverviewViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79C28C131B02DAF800E59E42 /* SuspectViewController.m in Sources */,
+				7907A3491B03807F00918B1B /* CaseOverviewViewController.m in Sources */,
 				793AB0D51B00C599008D2ED3 /* QRClewDetailViewController.m in Sources */,
 				793AB0B31B00C221008D2ED3 /* ScannerViewController.m in Sources */,
 				79C28C071B02557D00E59E42 /* MyClews.m in Sources */,
@@ -356,7 +360,6 @@
 				79B106321B00DFA10087E9F7 /* MapAnnotation.m in Sources */,
 				79C28C1A1B02DC4000E59E42 /* SuspectStore.m in Sources */,
 				79C28BF21B014AB500E59E42 /* CaseDetailViewController.m in Sources */,
-				C84CB46D1B02A9F500090C1D /* CaseOverviewViewController.m in Sources */,
 				79B106351B012E670087E9F7 /* DetectiveApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
