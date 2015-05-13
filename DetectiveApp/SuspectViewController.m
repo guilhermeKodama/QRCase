@@ -42,6 +42,7 @@
     [super viewDidLoad];
     
     _suspects = [[SuspectStore sharedStore] getAll];
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"backgroundapp"]];
 
     [self setCurrentSuspectInformation];
     

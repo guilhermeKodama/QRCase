@@ -29,6 +29,8 @@ static double lng = 0;
     NSLog(@"VIEW DID LOAD");
     [super viewDidLoad];
     
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"backgroundapp"]];
+
     
     self.locationManager = [[CLLocationManager alloc] init];
     self.locationManager.delegate = self;

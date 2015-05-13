@@ -31,6 +31,9 @@
     [super viewDidLoad];
     _myClews = [[MyClewsStore sharedStore] getAll];
     
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"backgroundapp"]];
+
+    
     for (MyClews *clew in _myClews) {
         NSLog(@"PISTAAAAA :%@",clew.clewDescription);
         NSLog(@"PISTAAAAA :%@",clew.clewDescription);
