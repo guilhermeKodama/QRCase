@@ -24,7 +24,10 @@
 		79C28C041B0253F400E59E42 /* MyClewsStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C28C031B0253F400E59E42 /* MyClewsStore.m */; };
 		79C28C071B02557D00E59E42 /* MyClews.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C28C061B02557D00E59E42 /* MyClews.m */; };
 		79C28C0B1B027D1B00E59E42 /* CustomCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C28C0A1B027D1B00E59E42 /* CustomCollectionViewCell.m */; };
-		C84CB46D1B02A9F500090C1D /* CaseOverviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84CB46C1B02A9F500090C1D /* CaseOverviewViewController.m */; };
+		79C28C0F1B02D61800E59E42 /* MyClewDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C28C0E1B02D61800E59E42 /* MyClewDetailViewController.m */; };
+		79C28C131B02DAF800E59E42 /* SuspectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C28C121B02DAF800E59E42 /* SuspectViewController.m */; };
+		79C28C1A1B02DC4000E59E42 /* SuspectStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C28C191B02DC4000E59E42 /* SuspectStore.m */; };
+		79C28C201B02E69800E59E42 /* Suspect.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C28C1F1B02E69800E59E42 /* Suspect.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,8 +72,14 @@
 		79C28C061B02557D00E59E42 /* MyClews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyClews.m; sourceTree = "<group>"; };
 		79C28C091B027D1B00E59E42 /* CustomCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCollectionViewCell.h; sourceTree = "<group>"; };
 		79C28C0A1B027D1B00E59E42 /* CustomCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCollectionViewCell.m; sourceTree = "<group>"; };
-		C84CB46B1B02A9F500090C1D /* CaseOverviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaseOverviewViewController.h; sourceTree = "<group>"; };
-		C84CB46C1B02A9F500090C1D /* CaseOverviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaseOverviewViewController.m; sourceTree = "<group>"; };
+		79C28C0D1B02D61800E59E42 /* MyClewDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyClewDetailViewController.h; sourceTree = "<group>"; };
+		79C28C0E1B02D61800E59E42 /* MyClewDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyClewDetailViewController.m; sourceTree = "<group>"; };
+		79C28C111B02DAF800E59E42 /* SuspectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuspectViewController.h; sourceTree = "<group>"; };
+		79C28C121B02DAF800E59E42 /* SuspectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuspectViewController.m; sourceTree = "<group>"; };
+		79C28C181B02DC4000E59E42 /* SuspectStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuspectStore.h; sourceTree = "<group>"; };
+		79C28C191B02DC4000E59E42 /* SuspectStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuspectStore.m; sourceTree = "<group>"; };
+		79C28C1E1B02E69800E59E42 /* Suspect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Suspect.h; sourceTree = "<group>"; };
+		79C28C1F1B02E69800E59E42 /* Suspect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Suspect.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
