@@ -17,6 +17,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    //Changes BG Color and Selected.
+    
+    [[UITabBar appearance] setTintColor:[UIColor colorWithRed:(float)104/255 green:(float)39/255 blue:(float)53/255 alpha:1]];
+    [[UITabBar appearance] setBarTintColor:[UIColor colorWithRed:(float)229/255 green:(float)199/255 blue:(float)42/255 alpha:1]];
+
     return YES;
 }
 
